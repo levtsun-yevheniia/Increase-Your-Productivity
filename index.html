@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://kit.fontawesome.com/6a003cee82.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,20 +23,25 @@
 
           <img class="header_logo" src="img/cloud.png" alt="">
 
-          <div class="header_menu">
-            <a class="nav__link" href="#">Home</a>
-            <a class="nav__link" href="#">Blog</a>
-            <a class="nav__link" href="#">Features</a>
-            <a class="nav__link" href="#">Pricing</a>
-            <a class="nav__link" href="#">Documentation</a>
-          </div>
-          <div class="header_social">
-            <a class="nav__link_social" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a class="nav__link_social" href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a class="nav__link_social" href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a class="nav__link_social" href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a class="header_btn" href="#">Get started</a>
-          </div>
+            <!-- <div class="menu-open_block"> -->
+              <div class="header_menu">
+                <a class="nav__link" href="#">Home</a>
+                <a class="nav__link" href="#">Blog</a>
+                <a class="nav__link" href="#">Features</a>
+                <a class="nav__link" href="#">Pricing</a>
+                <a class="nav__link" href="#">Documentation</a>
+              </div>
+              <div class="header_social">
+                <a class="nav__link_social" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="nav__link_social" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="nav__link_social" href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a class="nav__link_social" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="header_btn" href="#">Get started</a>
+              </div>
+          <!-- </div> -->
+          <button class="menu-open">
+             <img src="img/menu.svg" alt="Open menu">
+          </button>
       </div>
     </div>
   </header>
@@ -43,6 +49,7 @@
   <!-- First -->
 
   <div class="first">
+    <!-- <div class="clouds_container"> -->
     <div class="container">
       <div class="first_inner">
             <h4>Plan Your Life</h4>
@@ -53,7 +60,7 @@
       </div>
 
       <div class="first_block">
-          <img src="img/Vector.svg" alt="">
+          <img class="first_block_img" src="img/Vector2.svg" alt="">
       </div>
       <div class="first_block">
         <div class="firstbuttons">
@@ -70,10 +77,15 @@
             <img class="first_image" src="img/Union.png" alt="">
           </div>
 
-          <img src="img/Vector-1.svg" alt="">
+          <img class="first_block_img2" src="img/Vector3.svg" alt="">
         </div>
       </div>
+      <img class="main_clouds_left_down" src="img/main_clouds_left_down.png" alt="">
+      <img class="main_clouds_left_up" src="img/main_clouds_right_up.png" alt="">
+      <img class="main_clouds_right_down" src="img/main_clouds_right_down.png" alt="">
+      <img class="main_clouds_right_up" src="img/main_clouds_right_up.png" alt="">
     </div>
+
   </div>
 
   <!-- Companies -->
@@ -103,7 +115,7 @@
    <!-- Plan and Manage -->
 
 <div class="plan_and_manage">
-  <div class="container">
+  <div class="container container--pam">
     <div class="plan_and_manage_inner">
           <div class="plan_and_manage_text">
             <h4>Desktop And Mobile App</h4>
@@ -130,7 +142,7 @@
 <!-- Read About Our App -->
 
  <div class="aboutapp">
-   <div class="container">
+   <div class="container aboutapp-container">
        <div class="aboutapp_title">
          <h4>About Us</h4>
          <h3>Read about our app</h3>
@@ -143,7 +155,7 @@
                <p class="item_text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.</p>
            </div>
            <div class="item_img">
-           <img src="img/Line 2.svg" alt="">
+           <img class="aboutapp_line" src="img/aboutapp/Line 2.svg" alt="">
            </div>
            <div class="item">
                <img src="img/aboutapp/2.svg" alt="">
@@ -151,18 +163,18 @@
                <p class="item_text">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.</p>
            </div>
            <div class="item_img">
-           <img src="img/aboutapp/Line 2.svg" alt="">
+           <img class="aboutapp_line" src="img/aboutapp/Line 2.svg" alt="">
            </div>
            <div class="item">
-               <img src="img/aboutapp/1.svg" alt="">
+               <img src="img/aboutapp/3.svg" alt="">
                <p class="itemtitle" >Meeting chats</p>
                <p class="item_text">Nisl idque mel ea, nominati voluptatum.</p>
            </div>
            <div class="item_img">
-           <img src="img/aboutapp/Line 2.svg" alt="">
+           <img class="aboutapp_line" src="img/aboutapp/Line 2.svg" alt="">
            </div>
            <div class="item">
-               <img src="img/aboutapp/1.svg" alt="">
+               <img src="img/aboutapp/4.svg" alt="">
                <p class="itemtitle">Save events</p>
                <p class="item_text" >Vim ne tacimates neglegentur. Erat diceret omittam at est.</p>
            </div>
@@ -170,13 +182,15 @@
 
        <div class="aboutapp_btns">
          <a class="aboutapp_btn" href="#">Read More</a>
-         <img src="img/aboutapp/Line 1.svg" alt="">
+         <img class="aboutapp_line" src="img/aboutapp/Line 1.svg" alt="">
          <p class="item_text item_text--or">or</p>
-         <img src="img/aboutapp/Line 1.svg" alt="">
+         <img class="aboutapp_line" src="img/aboutapp/Line 1.svg" alt="">
          <a class="aboutapp_btn" href="#">Get started</a>
        </div>
 
-       <img class="aboutapp_img" src="img/aboutapp/clouds.png" alt="">
+
+       <img class="aboutapp_img aboutapp_img--left" src="img/aboutapp/clouds_left.png" alt="">
+       <img class="aboutapp_img aboutapp_img--right" src="img/aboutapp/clouds_right.png" alt="">
    </div>
  </div>
 
@@ -218,7 +232,9 @@
         <div class="slider">
             <div class="slide">
 
-              <img class="res_img" src="img/resources_slider/1.jpg" alt="">
+              <div class="res_img_block">
+                 <img class="res_img" src="img/resources_slider/1.jpg" alt="">
+              </div>
 
               <div class="res_cont">
                 <h2>How to start planning</h2>
@@ -332,13 +348,15 @@
 </div> <!--/.questions-->
 
 
+<!-- Startnow -->
+
   <div class="startnow">
     <div class="startnow_inner">
         <div class="startnow_cont">
           <h4 class="startnow_title">Plan your life</h4>
           <h1 class="startnow_title">Get <span>started</span> now</h1>
           <p class="startnow_text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
-          Usu atqui laudem an, insolens gubergren similique est cu.
+          Usu atqui laudem an, insolens <br> gubergren similique est cu.
           Et vel modus congue vituperata.</p>
           <a class="startnow_btn" href="#">View prising</a>
         </div>
@@ -396,13 +414,9 @@
       </div>
     </div>
 </footer>
-
-
-
-
-
-
-
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/main.js"></script>
 </body>
+
+
 </html>
