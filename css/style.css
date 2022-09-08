@@ -352,17 +352,20 @@ h4 {
 }
 
  /* Plan and Manage */
-  /* plan_and_manage */
 
  .plan_and_manage{
    background-color: #EAF0FF;
    padding: 208px 0 216px 0;
-
-   /* position: relative; */
  }
 
  .container--pam{
-   position: relative;
+   display: flex;
+   max-width: 1200px;
+   padding: 0 30px;
+ }
+
+ .plan_and_manage_inner{
+   margin: auto 0;
  }
 
  .plan_and_manage_text{
@@ -436,10 +439,14 @@ h4 {
 }
 
 .pam_img{
-  position: absolute;
-  top: -30%;
-  right: -20%;
-  z-index: 1;
+  width: 60%;
+  margin-left: auto;
+}
+
+.pam_img img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* About App */
@@ -980,7 +987,6 @@ h4 {
 .subscribe_btn{
   margin-left: 14px;
   width: 184px;
-  /* width: 35%; */
 
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
@@ -1018,8 +1024,7 @@ h4 {
 
 .footer_inner{
   display: flex;
-  padding-top: 101px;
-  padding-bottom: 101px;
+  padding: 101px 0;
 }
 
 .header_menu--footer{
@@ -1076,14 +1081,23 @@ h4 {
 
 /* Responsive starts here */
 
-@media screen and (max-width: 1300px) {
-  .pam_img{
-    max-width: 750px;
-    right: -10%;
-  }
-}
-
 @media screen and (max-width: 1200px) {
+
+  /* Container */
+
+  .container--menu{
+    width: 950px;
+  }
+  .container--footer{
+    max-width: 950px;
+  }
+
+
+  .aboutapp-container{
+    max-width: 950px;
+  }
+
+  /* First */
 
   .first_btn_cont:nth-child(1){
     bottom: 41%;
@@ -1100,30 +1114,24 @@ h4 {
     right: 6%;
   }
 
+  /* About App */
+
   .aboutapp_img--left {
     left: 0;
     transform: translate(0, 50%);
    }
 
+   /* Plam and Manage */
+
   .plan_and_manage_text{
     max-width: 380px;
   }
 
-  .pam_img{
+  /* .pam_img{
     right: -3%;
-  }
+  } */
 
-  .container--menu{
-    width: 950px;
-  }
-  .container--footer{
-    max-width: 950px;
-  }
-
-
-  .aboutapp-container{
-    max-width: 950px;
-  }
+    /* Resources */
 
   .slide{
     margin-top: 53px;
@@ -1131,6 +1139,15 @@ h4 {
 }
 
 @media screen and (max-width: 1024px) {
+
+  /* Container */
+
+  .container{
+    max-width: 900px;
+  }
+
+   /* First */
+
   .first_btn_cont:nth-child(1){
     bottom: 49.5%;
     right: 42%;
@@ -1141,19 +1158,21 @@ h4 {
     right: 35%;
   }
 
-  .pam_img{
+  /* Plan and Manage */
+
+  /* .pam_img{
     max-width: 600px;
     top: 0;
     right: -6%;
-  }
+  } */
 
-  .container{
-    max-width: 900px;
-  }
+  /* Plan and Manage */
 
   .plan_and_manage_text{
     max-width: 300px;
   }
+
+  /* Resources */
 
   .resources_slider{
     max-width: 950px;
@@ -1176,12 +1195,36 @@ h4 {
     margin-top: 40px;
   }
 
+  /* Start Now */
+
   .startnow_img2, .startnow_img1{
     display: none;
   }
 }
 
 @media screen and (max-width: 991px) {
+
+  /* Container */
+
+  .container {
+    max-width: 700px;
+  }
+
+  .container--footer {
+    max-width: 700px;
+  }
+
+  .container--newslet {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .aboutapp-container{
+    max-width: 730px;
+  }
+
+  /* Header */
 
   .header_menu {
 		display: none;
@@ -1195,29 +1238,7 @@ h4 {
 	    display: block
 	}
 
-  .container {
-    max-width: 700px;
-  }
-
-  .container--footer {
-    max-width: 700px;
-  }
-
-  .container--newslet {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .newslet_cont {
-    padding: 45px 0 20px 0;
-  }
-
-  .subscribe {
-    width: 100%;
-    max-width: 480px;
-    display: flex;
-    padding: 0 0 50px 0;
-  }
+  /* First */
 
   .first_btn_cont:nth-child(1){
     bottom: 43%;
@@ -1250,6 +1271,8 @@ h4 {
     display: none;
   }
 
+  /* Abour App */
+
   .aboutapp_img--right {
     right: -5%;
     transform: translate(-5%, -80%);
@@ -1259,6 +1282,8 @@ h4 {
     left: -10%;
     transform: translate(10%, 50%);
    }
+
+   /* Plan and Manage */
 
    .pam_img{
       display: none;
@@ -1293,20 +1318,27 @@ h4 {
      font-size: 13px;
    }
 
-  .aboutapp-container{
-    max-width: 730px;
-  }
+  /* Resources */
 
   .resources{
     background-color: #EFF1F5;
   }
 
-  .slider{
-    background-color: #EFF1F5;
+  .resources_title{
+    padding-top: 70px;
+  }
+
+  .resources_title h3{
+    margin: 10px 0;
+  }
+
+  .resources_slider{
+    max-width: 100%;
   }
 
   .slider{
-    margin: 0 auto;
+    background-color: #fff;
+    margin: 20px auto 0 auto;
     max-width: 750px;
   }
 
@@ -1319,13 +1351,11 @@ h4 {
     padding-top: 20px;
   }
 
-  .res_arrow{
-      display: none;
-  }
-
   .dots-wrapper {
     padding-bottom: 60px;
   }
+
+  /* Question */
 
   .questions_inner {
     padding: 120px 0 120px 0;
@@ -1334,18 +1364,39 @@ h4 {
   .header_menu--footer, .header_social--footer{
     display: block;
   }
+
+  /* Newslet */
+
+  .newslet_cont {
+    padding: 45px 0 20px 0;
+  }
+
+  .subscribe {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    padding: 0 0 50px 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
+  /* Container */
+
   .container {
+    width: 100%;
     max-width: 650px;
+    padding: 0 20px;
   }
 
   .aboutapp-container{
     height: 600px;
+    width: 100%;
     max-width: 600px;
+    padding: 0 20px;
   }
+
+  /* About App */
 
   .aboutapp_title{
     padding-top: 100px;
@@ -1381,23 +1432,50 @@ h4 {
     display: none;
   }
 
-  /*resources_tablet*/
+  /* Statistic */
 
-  .resources_title{
-    padding-top: 100px;
+  .stat_cont {
+    padding: 50px 30px 50px 20px;
   }
 
-  .resources_slider{
-    max-width: 100%;
+  .stat_cont2 {
+    padding: 50px 20px 50px 30px;
   }
+
+  .stat_text {
+    width: 100%;
+    max-width: 230px;
+    font-size: 15px;
+  }
+
+  /* Resources */
 
   .slider{
-    margin: 10px auto 35px auto;
     height: 100%;
+    margin: 20px 20px 0 20px;
   }
 
   .slide{
-    margin-top: 20px;
+    background: #fff;
+    margin: 0;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .res_cont {
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .res_img_block {
+    display: none;
+  }
+
+  .res_text{
+    width: 100%;
+    margin: 22px 0 21px 0;
+    padding: 0 20px;
+    height: auto;
   }
 
   .slide h2{
@@ -1405,20 +1483,50 @@ h4 {
     line-height: 20px;
   }
 
-  /* .questions{
-    background-color: #EFF1F5;
-  } */
+  .res_arrow{
+      display: none;
+  }
+
+  /* Questions */
+
+  .questions_inner {
+    padding: 70px 0 70px 0;
+  }
+
+  .questions_block {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Footer */
+
+  .footer_inner {
+    padding: 101px 20px;
+  }
+
+  .nav__link_social--footer {
+    margin: 0 0 0 20px;
+  }
 
 }
 
 @media screen and (max-width: 575px) {
+
+  /* Container */
+
   .container {
     width: 100%;
     padding: 0 15px;
   }
+
+  /* First */
+
   .main_clouds_left_up, .main_clouds_left_down, .main_clouds_right_up, .main_clouds_right_down{
     display: none;
   }
+
+  /* Header */
 
   .header .show-menu {
       left: 50%;
@@ -1426,6 +1534,8 @@ h4 {
       width: 90%;
       transform: translate(-50%, 0);
   }
+
+  /* Companies */
 
   .companies_cont{
     display: flex;
@@ -1441,10 +1551,22 @@ h4 {
     padding-bottom: 20px;
   }
 
+  /* Plan and Manage */
+
   .plan_and_manage {
-    height: 100vh;
-    padding: auto 0;
+    height: auto;
+    padding: 70px 0;
   }
+
+  .plan_and_manage_text h4, h2 {
+    margin-bottom: 18px;
+  }
+
+  .plan_and_manage_text p {
+    margin-bottom: 20px;
+  }
+
+  /* About App */
 
   .aboutapp {
     height: 1170px;
@@ -1470,7 +1592,6 @@ h4 {
   }
 
   .item {
-    /* text-align: center; */
     width: 80%;
     padding: 0 5px;
     height: 200px;
@@ -1481,19 +1602,98 @@ h4 {
     display: flex;
   }
 
-  .stat_cont {
-    padding: 50px 30px 50px 0;
+  .aboutapp_btns {
+    margin: 10px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 110px;
   }
 
-  .stat_cont2{
-    padding: 50px 0 50px 30px;
-  }
+  /* Statistic */
 
   .stat_text{
     font-size: 12px;
-    width: 110px;
   }
 
+  .stat_title{
+    font-size: 30px;
+  }
+
+  /* Question */
+
+  .questions_block {
+    margin-top: 0;
+  }
+
+  .answer_text {
+    width: 100%;
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .answer {
+    display: none;
+    margin: 0 20px 20px 20px;
+  }
+
+  .answer_cont{
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .answer_btn {
+    margin: 20px 0 0 0;
+  }
+
+  /* Start now */
+
+  .startnow_inner {
+     padding: 0 20px;
+ }
+
+ .startnow_cont {
+    padding: 50px 20px;
+  }
+
+  .startnow_title {
+    padding-bottom: 10px;
+  }
+
+  .startnow_cont h1{
+    font-size: 36px;
+  }
+
+  .startnow_text {
+    height: auto;
+    font-size: 12px;
+    padding-bottom: 18px;
+  }
+
+  /* Subscribe */
+
+  .subscribe {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px 50px 20px;
+  }
+
+  .subscribe_input {
+    margin-bottom: 15px;
+  }
+
+  /* Footer */
+
+  .footer_inner {
+    padding: 70px 0;
+    flex-wrap: wrap;
+  }
+
+  .header_menu--footer {
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 
