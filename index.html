@@ -11,25 +11,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <title>Increase Your Productivity</title>
 </head>
 <body>
 
   <!-- Header -->
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="container container--menu">
       <div class="header_inner">
 
-          <img class="header_logo" src="img/cloud.png" alt="">
+          <img class="header_logo" src="img/cloud.png" alt="" data-scroll="#first">
 
             <!-- <div class="menu-open_block"> -->
               <div class="header_menu">
-                <a class="nav__link" href="#">Home</a>
-                <a class="nav__link" href="#">Blog</a>
-                <a class="nav__link" href="#">Features</a>
-                <a class="nav__link" href="#">Pricing</a>
-                <a class="nav__link" href="#">Documentation</a>
+                <a class="nav__link" href="#" data-scroll="#about">About App</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                <a class="nav__link" href="#" data-scroll="#questions">Questions</a>
+                <a class="nav__link" href="#" data-scroll="#newsletter">Contacts</a>
               </div>
               <div class="header_social">
                 <a class="nav__link_social" href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -38,17 +39,20 @@
                 <a class="nav__link_social" href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a class="header_btn" href="#">Get started</a>
               </div>
-          <!-- </div> -->
-          <button class="menu-open">
-             <img src="img/menu.svg" alt="Open menu">
+
+          <button class="menu-open2" type="button">
+              <span class="menu-open2__item">Menu</span>
           </button>
       </div>
     </div>
   </header>
 
+
+<div class="page">
+
   <!-- First -->
 
-  <div class="first">
+  <div class="first" id="first" data-section="#">
     <!-- <div class="clouds_container"> -->
     <div class="container">
       <div class="first_inner">
@@ -66,15 +70,15 @@
         <div class="firstbuttons">
           <div class="first_btn_cont">
             <a class="first_btn" href="#">1</a>
-            <img class="first_image" src="img/Union.png" alt="">
+            <img class="first_image" src="img/Union.svg" alt="">
           </div>
           <div class="first_btn_cont">
             <a class="first_btn" href="#">2</a>
-            <img class="first_image" src="img/Union.png" alt="">
+            <img class="first_image" src="img/Union2.svg" alt="">
           </div>
           <div class="first_btn_cont">
             <a class="first_btn" href="#">3</a>
-            <img class="first_image" src="img/Union.png" alt="">
+            <img class="first_image" src="img/Union3.svg" alt="">
           </div>
 
           <img class="first_block_img2" src="img/Vector3.svg" alt="">
@@ -90,8 +94,8 @@
 
   <!-- Companies -->
 
-  <div class="companies">
-    <div class="container">
+  <div class="companies" id="companies">
+    <div class="container companies--container">
       <div class="companies_cont">
         <div class="companies_img">
         <img src="img/companies/1.png" alt="">
@@ -114,36 +118,36 @@
 
    <!-- Plan and Manage -->
 
-<div class="plan_and_manage">
-  <div class="container container--pam">
-    <div class="plan_and_manage_inner">
-          <div class="plan_and_manage_text">
-            <h4>Desktop And Mobile App</h4>
-            <h2><span>Plan</span> and <span>Manage</span></h2>
-            <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
-              Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
-              Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</p>
-          </div>
-          <div class="plan_and_manage_btn">
-            <button class="pam_btn1">
-                View video
-                <i class="fa-solid fa-play"></i>
-            </button>
-            <button class="pam_btn2">
-                See features
-            </button>
-          </div>
-    </div>
-    <div class="pam_img">
-      <img src="img/plan_and_manage.png" alt="">
+  <div class="plan_and_manage" id="plan_and_manage">
+    <div class="container container--pam">
+      <div class="plan_and_manage_inner">
+            <div class="plan_and_manage_text">
+              <h4>Desktop And Mobile App</h4>
+              <h2><span>Plan</span> and <span>Manage</span></h2>
+              <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
+                Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</p>
+            </div>
+            <div class="plan_and_manage_btn">
+              <button class="pam_btn1">
+                  View video
+                  <i class="fa-solid fa-play"></i>
+              </button>
+              <button class="pam_btn2">
+                  See features
+              </button>
+            </div>
+      </div>
+      <div class="pam_img">
+        <img src="img/plan_and_manage.png" alt="">
+      </div>
     </div>
   </div>
-</div>
 
 
 <!-- Read About Our App -->
 
- <div class="aboutapp">
+ <div class="aboutapp" id="about" data-section="#">
    <div class="container aboutapp-container">
        <div class="aboutapp_title">
          <h4>About Us</h4>
@@ -199,7 +203,7 @@
 
 <!-- Statistic -->
 
-  <div class="statistic">
+  <div class="statistic" id="statistic">
     <div class="stat_cont">
       <img src="img/statistic/1.svg" alt="" class="stat_icon">
       <div class="stat_title">89%</div>
@@ -214,140 +218,153 @@
 
 <!-- Resources -->
 
-  <div class="resources">
-      <div class="resources_title">
-        <h4>Our Resources</h4>
-        <h3>Start reading our blog</h3>
-      </div>
-
-      <div class="resources_slider">
-
-        <div class="res_arrows">
-            <a class="res_arrow  res_arrow--prev" href="#">
-              <img src="img/resources_slider/prev.svg" alt="">
-            </a>
-            <a class="res_arrow  res_arrow--next" href="#">
-              <img src="img/resources_slider/next.svg" alt="">
-            </a>
-        </div>
-
-        <div class="slider">
-            <div class="slide">
-
-              <div class="res_img_block">
-                 <img class="res_img" src="img/resources_slider/1.jpg" alt="">
-              </div>
-
-              <div class="res_cont">
-                <h2>How to start planning</h2>
-                <p class="res_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
-                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-                  Natum petentium principes mei ea. Tota everti periculis vis ei,
-                  quas tibique pro at, eos ut decore ...</p>
-                <div class="res_btns">
-                <a class="res_btn" href="#">Read now</a>
-                <a class="res_btn2" href="#">Add to your bookmarks</a>
+  <div class="resources" id="blog" data-section="#">
+    <div class="res_container">
+          <div class="res_item">
+                <div class="resources_title">
+                  <h4>Our Resources</h4>
+                  <h3>Start reading our blog</h3>
                 </div>
-              </div>
-            </div>
-         </div>  <!--/.close slider-->
-    </div>  <!--/. close resources_slider -->
 
-    <div class="dots-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+                <div data-slider>
+
+                    <div class="slid_item">
+                        <div class="slide">
+
+                          <div class="res_img_block">
+                             <img class="res_img" src="img/resources_slider/1.jpg" alt="">
+                          </div>
+
+                          <div class="res_cont">
+                            <h2>How to start planning</h2>
+                            <p class="res_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                              Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                              Natum petentium principes mei ea. Tota everti periculis vis ei,
+                              quas tibique pro at, eos ut decore ...</p>
+                            <div class="res_btns">
+                            <a class="res_btn" href="#">Read now</a>
+                            <a class="res_btn2" href="#">Add to your bookmarks</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="slid_item">
+                        <div class="slide">
+
+                          <div class="res_img_block">
+                             <img class="res_img" src="img/resources_slider/3.jpg" alt="">
+                          </div>
+
+                          <div class="res_cont">
+                            <h2>How to start planning</h2>
+                            <p class="res_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                              Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                              Natum petentium principes mei ea. Tota everti periculis vis ei,
+                              quas tibique pro at, eos ut decore ...</p>
+                            <div class="res_btns">
+                            <a class="res_btn" href="#">Read now</a>
+                            <a class="res_btn2" href="#">Add to your bookmarks</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+
+                 </div>
     </div>
+
+  </div>  <!--/.res_container-->
   </div>  <!--/.close resources-->
 
 
        <!-- Questions -->
 
-<div class="questions">
-  <div class="questions_inner">
-    <div class="question_title">
-    <h4>Customer help</h4>
-    <h3>Frequently asked questions</h3>
+  <div class="questions" id="questions" data-section="#">
+    <div class="questions_inner">
+      <div class="question_title">
+      <h4>Customer help</h4>
+      <h3>Frequently asked questions</h3>
+      </div>
+      <div class="questions_block">
+            <div class="question" data-collapse="#que_1">
+              <div class="que">
+                  <img src="img/quearrow.svg" alt="" class="rot">
+                  <p class="que_title active">Reque insolens in vel?</p>
+              </div>
+              <div class="answer" id="que_1">
+                <div class="answer_cont">
+                  <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                    Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                  <button class="answer_btn" type="button" name="button">Go to documentation</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="question" data-collapse="#que_2">
+              <div class="que">
+                  <img src="img/quearrow.svg" alt="" class="rot">
+                  <p class="que_title">Vis rebum error graecis ea, id sit postea accusamus?</p>
+              </div>
+              <div class="answer" id="que_2">
+                <div class="answer_cont">
+                  <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                    Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                  <button class="answer_btn" type="button" name="button">Go to documentation</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="question" data-collapse="#que_3">
+              <div class="que">
+                  <img src="img/quearrow.svg" alt="" class="rot">
+                  <p class="que_title">Lorem repudiandae ne nec?</p>
+              </div>
+              <div class="answer" id="que_3">
+                <div class="answer_cont">
+                  <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                    Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                  <button class="answer_btn" type="button" name="button">Go to documentation</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="question"  data-collapse="#que_4">
+              <div class="que">
+                  <img src="img/quearrow.svg" alt="" class="rot">
+                  <p class="que_title">Ad dicit numquam vel. Et eos iudico feugait percipitur?</p>
+              </div>
+              <div class="answer" id="que_4">
+                <div class="answer_cont">
+                  <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                    Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                  <button class="answer_btn" type="button" name="button">Go to documentation</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div class="question"  data-collapse="#que_5">
+              <div class="que">
+                  <img src="img/quearrow.svg" alt="" class="rot">
+                  <p class="que_title">Sea no dico percipitur. Fierent constituam definitiones id eum?</p>
+              </div>
+              <div class="answer" id="que_5">
+                <div class="answer_cont">
+                  <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
+                    Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
+                  <button class="answer_btn" type="button" name="button">Go to documentation</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+      </div> <!--/.question_block-->
+
     </div>
-    <div class="questions_block">
-          <div class="question active">
-            <div class="que">
-                <i class="fa-solid fa-chevron-down"></i>
-                <p class="que_title active">Reque insolens in vel?</p>
-            </div>
-            <div class="answer">
-              <div class="answer_cont">
-                <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
-                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                <button class="answer_btn" type="button" name="button">Go to documentation</button>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <div class="question">
-            <div class="que">
-                <i class="fa-solid fa-chevron-down"></i>
-                <p class="que_title">Vis rebum error graecis ea, id sit postea accusamus?</p>
-            </div>
-            <div class="answer">
-              <div class="answer_cont">
-                <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
-                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                <button class="answer_btn" type="button" name="button">Go to documentation</button>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <div class="question">
-            <div class="que">
-                <i class="fa-solid fa-chevron-down"></i>
-                <p class="que_title">Lorem repudiandae ne nec?</p>
-            </div>
-            <div class="answer">
-              <div class="answer_cont">
-                <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
-                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                <button class="answer_btn" type="button" name="button">Go to documentation</button>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <div class="question">
-            <div class="que">
-                <i class="fa-solid fa-chevron-down"></i>
-                <p class="que_title">Ad dicit numquam vel. Et eos iudico feugait percipitur?</p>
-            </div>
-            <div class="answer">
-              <div class="answer_cont">
-                <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
-                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                <button class="answer_btn" type="button" name="button">Go to documentation</button>
-              </div>
-            </div>
-          </div>
-          <hr>
-
-          <div class="question">
-            <div class="que">
-                <i class="fa-solid fa-chevron-down"></i>
-                <p class="que_title">Sea no dico percipitur. Fierent constituam definitiones id eum?</p>
-            </div>
-            <div class="answer">
-              <div class="answer_cont">
-                <p class="answer_text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
-                  Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
-                <button class="answer_btn" type="button" name="button">Go to documentation</button>
-              </div>
-            </div>
-          </div>
-          <hr>
-    </div> <!--/.question_block-->
-
-  </div>
-</div> <!--/.questions-->
+  </div> <!--/.questions-->
 
 
 <!-- Startnow -->
@@ -370,53 +387,56 @@
 
 <!--Newsletter-->
 
-<div class="newsletter">
-  <div class="container container--newslet">
-    <div class="newslet_cont">
-        <p class="newslet_title" >Subscribe for newsletter</p>
-        <p class="newslet_text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+  <div class="newsletter" id="newsletter" data-section="#">
+    <div class="container container--newslet">
+      <div class="newslet_cont">
+          <p class="newslet_title" >Subscribe for newsletter</p>
+          <p class="newslet_text">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+      </div>
+      <form class="subscribe" action="/" method="post">
+          <input class="subscribe_input" type="email" placeholder="Email adress" name="name">
+          <button class="subscribe_btn" type="submit" name="button">Subscribe</button>
+      </form>
     </div>
-    <form class="subscribe" action="/" method="post">
-        <input class="subscribe_input" type="email" placeholder="Email adress" name="name">
-        <button class="subscribe_btn" type="submit" name="button">Subscribe</button>
-    </form>
   </div>
-</div>
 
-<!-- Footer -->
+  <!-- Footer -->
 
-<footer class="footer">
-    <div class="container container--footer">
-      <div class="footer_inner">
-        <div class="footer_logo">
-          <img class="footer_logo2" src="img/cloud_footer.png" alt="">
-        </div>
-
-        <div class="header_menu header_menu--footer">
-          <a class="nav__link nav__link--footer" href="#">Home</a>
-          <a class="nav__link nav__link--footer" href="#">Blog</a>
-          <a class="nav__link nav__link--footer" href="#">Features</a>
-          <a class="nav__link nav__link--footer" href="#">Pricing</a>
-          <a class="nav__link nav__link--footer" href="#">Documentation</a>
-          <div class="copyright">
-            © 2022
+  <footer class="footer" id="contacts">
+      <div class="container container--footer">
+        <div class="footer_inner">
+          <div class="footer_logo" data-scroll="#first">
+            <img class="footer_logo2" src="img/cloud_footer.png" alt="">
           </div>
-        </div>
-        <div class="header_social header_social--footer">
-          <div class="social_footer">
-            <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-instagram"></i></a>
+
+          <div class="header_menu header_menu--footer">
+            <a class="nav__link nav__link--footer" href="#" data-scroll="#about">About App</a>
+            <a class="nav__link nav__link--footer" href="#" data-scroll="#blog">Blog</a>
+            <a class="nav__link nav__link--footer" href="#" data-scroll="#questions">Questions</a>
+            <a class="nav__link nav__link--footer" href="#" data-scroll="#newsletter">Contacts</a>
+            <div class="copyright">
+              © 2022
+            </div>
           </div>
-          <div class="footer_btn">
-            <a class="header_btn header_btn--footer" href="#">Get started</a>
+          <div class="header_social header_social--footer">
+            <div class="social_footer">
+              <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-telegram"></i></a>
+              <a class="nav__link_social nav__link_social--footer" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footer_btn">
+              <a class="header_btn header_btn--footer" href="#">Get started</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  </footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 
